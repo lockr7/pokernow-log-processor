@@ -5,11 +5,28 @@
   <div class="container-md">
     <div class="input-group input-group-lg mb-3">
       <div class="custom-file">
-        <input type="file" required class="custom-file-input" id="upload" name="logfile" onchange="document.getElementById('file_upload_label').innerText = document.getElementById('upload').files[0].name">
-        <label class="custom-file-label" id="file_upload_label" for="upload" aria-describedby="upload_button">Choose a Poker Now log file</label>
+        <input
+          type="file"
+          required
+          class="custom-file-input"
+          id="upload"
+          name="logfile"
+          onchange="document.getElementById('file_upload_label').innerText = document.getElementById('upload').files[0].name"
+        />
+        <label
+          class="custom-file-label"
+          id="file_upload_label"
+          for="upload"
+          aria-describedby="upload_button"
+        >Choose a Poker Now log file</label>
       </div>
     </div>
-    <input class="btn btn-primary btn-lg btn-block" type="submit" name="upload_button" value="Upload" />
+    <input
+      class="btn btn-primary btn-lg btn-block"
+      type="submit"
+      name="upload_button"
+      value="Upload"
+    />
   </div>
 
 </form>
@@ -20,7 +37,8 @@
       <div class="card">
         <div class="card-body">
           <h5 class="card-title">Stack Sizes</h5>
-          <p class="card-text">See how your stack compared to other players throughout the game.</p>
+          <p class="card-text">See how your stack compared to other players
+            throughout the game.</p>
         </div>
       </div>
     </div>
@@ -28,7 +46,8 @@
       <div class="card">
         <div class="card-body">
           <h5 class="card-title">End of Action</h5>
-          <p class="card-text">Did most of your hands end before the flop or go all the way to showdown?</p>
+          <p class="card-text">Did most of your hands end before the flop or go
+            all the way to showdown?</p>
         </div>
       </div>
     </div>
@@ -36,7 +55,8 @@
       <div class="card">
         <div class="card-body">
           <h5 class="card-title">Winning Hands</h5>
-          <p class="card-text">How often were people eking out high card wins or dominating with full houses?</p>
+          <p class="card-text">How often were people eking out high card wins or
+            dominating with full houses?</p>
         </div>
       </div>
     </div>
@@ -44,7 +64,46 @@
       <div class="card">
         <div class="card-body">
           <h5 class="card-title">Time to Act</h5>
-          <p class="card-text">Get some real data to shame the person that always takes forever to bet.</p>
+          <p class="card-text">Get some real data to shame the person that
+            always takes forever to bet.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row feature-cards">
+    <div class="col-sm-12 col-md-6 col-lg-3">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Stack Sizes</h5>
+          <p class="card-text">See how your stack compared to other players
+            throughout the game.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-12 col-md-6 col-lg-3">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">End of Action</h5>
+          <p class="card-text">Did most of your hands end before the flop or go
+            all the way to showdown?</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-12 col-md-6 col-lg-3">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Winning Hands</h5>
+          <p class="card-text">How often were people eking out high card wins or
+            dominating with full houses?</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-12 col-md-6 col-lg-3">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Time to Act</h5>
+          <p class="card-text">Get some real data to shame the person that
+            always takes forever to bet.</p>
         </div>
       </div>
     </div>
@@ -55,16 +114,18 @@
 
 <div class="container-xl">
   <div class="row">
-    {{!-- <div class="card col-md-4 col-sm">
-      <ol class="list-group list-group-flush">
-        <li class="list-group-item">1. Upload your <a href="https://pokernow.club">PokerNow</a> log file</li>
-        <li class="list-group-item">2. Enjoy some pretty charts</li>
-        <li class="list-group-item">3. Get back to playing poker</li>
-      </ol>
-    </div> --}}
     <div class="col-lg">
-      <p>This is a quick-and-dirty app that takes your <a href="https://pokernow.club">PokerNow</a> log files and turns them into some pretty charts and graphs. All data is deleted as soon as it is processed (seriously - check the <a href="https://github.com/notpace/pokernow-log-processor">source code</a> if you want to).</p>
-      <p>If something doesn't look right, please <a href='https://github.com/notpace/pokernow-log-processor/issues' target="_blank">file an issue on github</a>.</p>
+      <p>This is a quick-and-dirty app that takes your
+        <a href="https://pokernow.club">PokerNow</a>
+        log files and turns them into some pretty charts and graphs. All data is
+        deleted as soon as it is processed (seriously - check the
+        <a href="https://github.com/lockr7/pokernow-log-processor">source code</a>
+        if you want to).</p>
+      <p>If something doesn't look right, please
+        <a
+          href="https://github.com/lockr7/pokernow-log-processor/issues"
+          target="_blank"
+        >file an issue on github</a>.</p>
     </div>
   </div>
 </div>

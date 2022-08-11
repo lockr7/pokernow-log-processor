@@ -33,7 +33,7 @@ app.get("/", (req, res) => {
 app.post("/upload", upload.single("logfile"), function (req, res, next) {
   const data = [];
   fs.createReadStream(req.file.path)
-    .pipe(parse({ columns: true }))
+    .pipe(parse.parse({ columns: true }))
     .on("data", (r) => {
       data.push(r);
     })
